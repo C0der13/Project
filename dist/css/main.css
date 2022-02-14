@@ -199,23 +199,6 @@ img {
     color: darkgreen;
     padding-bottom: 0.4rem; }
 
-#home-b .stats {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); }
-  #home-b .stats li {
-    line-height: 2; }
-    #home-b .stats li.stats-title {
-      font-size: 1.5rem; }
-    #home-b .stats li.stats-number {
-      font-size: 2rem;
-      font-weight: bold; }
-  #home-b .stats div {
-    padding: 3rem 0; }
-    #home-b .stats div:nth-child(odd) {
-      background: #f4f4f4; }
-    #home-b .stats div:nth-child(even) {
-      background: #ccc; }
-
 #about-c .about-logos {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -294,7 +277,7 @@ img {
   .pic img {
     display: none; }
   .pic .pic-content {
-    line-height: 1rem; }
+    line-height: 0.2rem; }
   #header-home {
     height: 10rem;
     border-bottom: 3px solid darkgreen;
@@ -304,9 +287,8 @@ img {
   #header-inner {
     height: 10rem; }
   #home-a .specials,
-  #home-b .stats,
-  #home-c .process,
-  #about-d .testimonials,
+  #home-b,
+  #home-c,
   #contact-b .contact-info,
   .items {
     grid-template-columns: 1fr; }
@@ -318,10 +300,6 @@ img {
       padding-bottom: 0; }
   #home-b .stats div {
     padding: 2rem 0 1rem 0; }
-  #about-a .about-info {
-    grid-template-areas: "bioimage" "bio" "aw1" "aw2" "aw3"; }
-  #about-c {
-    display: none; }
   #contact-a .text-fields {
     grid-template-areas: "name" "subject" "email" "phone" "message"; }
   #contact-b div {
@@ -348,3 +326,7 @@ img {
 @media (max-height: 330px) {
   #header-home .header-content h1 {
     font-size: 2rem; } }
+
+@media (max-width: 1100px) {
+  .pic img {
+    display: none; } }

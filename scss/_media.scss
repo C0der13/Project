@@ -33,7 +33,7 @@
       display: none;
     }
     .pic-content {
-      line-height: 1rem;
+      line-height: 0.2rem;
     }
   }
 
@@ -54,9 +54,8 @@
   }
 
   #home-a .specials,
-  #home-b .stats,
-  #home-c .process,
-  #about-d .testimonials,
+  #home-b,
+  #home-c,
   #contact-b .contact-info,
   .items {
     grid-template-columns: 1fr;
@@ -79,23 +78,6 @@
       .stats div {
         padding: 2rem 0 1rem 0;
       }
-    }
-  }
-
-  #about {
-    &-a {
-      .about-info {
-        grid-template-areas:
-          "bioimage"
-          "bio"
-          "aw1"
-          "aw2"
-          "aw3";
-      }
-    }
-
-    &-c {
-      display: none;
     }
   }
 
@@ -157,6 +139,14 @@
       h1 {
         font-size: 2rem;
       }
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .pic {
+    img {
+      display: none;
     }
   }
 }
