@@ -13,7 +13,7 @@
 
 .btn-main {
   color: #333;
-  background-color: darkgreen; }
+  background-color: #ffbc00; }
 
 .btn-light {
   color: #333;
@@ -26,11 +26,11 @@
 button[class^="btn-"]:hover,
 a[class^="btn-"]:hover,
 input[class^="btn-"]:hover {
-  background-color: darkgreen; }
+  background-color: #ffbc00; }
 
 .bg-main {
-  background: darkgreen;
-  color: set-text-color(darkgreen); }
+  background: #ffbc00;
+  color: set-text-color(#ffbc00); }
 
 .bg-dark {
   background: #333;
@@ -80,15 +80,26 @@ input[class^="btn-"]:hover {
   display: block;
   padding-bottom: 0.5rem;
   text-align: center;
-  font-weight: 100;
+  font-weight: 700;
   text-transform: uppercase; }
 
 .bottom-line {
   height: 2px;
   width: 10rem;
-  background: darkgreen;
+  background: #ffbc00;
   display: block;
   margin: 0 auto 1rem auto; }
+
+.dot {
+  height: 8px;
+  width: 8px;
+  background: #ffbc00;
+  display: block;
+  margin: 0 auto 1rem auto;
+  margin-top: 1.8rem; }
+
+.contact-info i {
+  color: #ffbc00; }
 
 * {
   margin: 0;
@@ -123,7 +134,13 @@ img {
 #main-nav {
   display: flex;
   justify-content: space-between;
-  padding-top: 1rem; }
+  padding-top: 1rem;
+  font-weight: 900;
+  font-size: 1.3rem; }
+  #main-nav .home {
+    color: #057dc7; }
+    #main-nav .home:hover {
+      color: #131a1d; }
   #main-nav ul {
     display: flex; }
   #main-nav li {
@@ -132,13 +149,12 @@ img {
     text-decoration: none;
     color: #333;
     text-transform: uppercase;
-    border-bottom: 3px darkgreen solid;
     padding-bottom: 0.5rem;
-    transition: border-color 0.5s; }
+    transition: color 0.5s; }
     #main-nav a:hover {
-      border-color: #ccc; }
+      color: #057dc7; }
     #main-nav a.current {
-      border-color: darkgreen; }
+      border-color: #ffbc00; }
 
 .pic {
   background: url(/dist/img/back2.jpg) no-repeat center center/cover;
@@ -161,10 +177,16 @@ img {
       max-height: 50px;
       margin-top: 170px;
       margin-left: 3rem;
-      justify-self: auto; }
+      position: absolute;
+      left: 33rem;
+      background-color: #ffbc00; }
+      .pic .pic-content .btn-light:hover {
+        background-color: #333;
+        color: #fff; }
 
 #quote {
-  color: #fff; }
+  color: #fff;
+  background-color: black; }
   #quote .section-title {
     font-size: 2rem;
     display: block;
@@ -177,9 +199,21 @@ img {
   background: url("../img/background.jpg") no-repeat center right/cover;
   height: 75vh;
   color: black; }
+  #header-home .layer {
+    background: rgba(51, 51, 51, 0.2);
+    padding-bottom: 2rem;
+    min-width: 100%;
+    position: absolute;
+    left: 0; }
   #header-home .header-content {
     text-align: center;
     padding-top: 15%; }
+    #header-home .header-content .btn-light {
+      background-color: #ffbc00;
+      font-weight: bolder; }
+      #header-home .header-content .btn-light:hover {
+        background-color: black;
+        color: #fff; }
     #header-home .header-content h1 {
       font-size: 2.5rem;
       line-height: 1.2;
@@ -188,7 +222,7 @@ img {
 #header-inner {
   background: url("../img/background.jpg") no-repeat 20% 20%/cover;
   height: 5.5rem;
-  border-bottom: 3px solid darkgreen; }
+  border-bottom: 3px solid #ffbc00; }
 
 #home-a .specials {
   margin-top: 3rem;
@@ -196,8 +230,22 @@ img {
   grid-gap: 1rem;
   grid-template-columns: repeat(3, 1fr); }
   #home-a .specials .fas {
-    color: darkgreen;
-    padding-bottom: 0.4rem; }
+    color: #ffbc00;
+    padding-bottom: 0.4rem;
+    border: 2px black solid;
+    border-radius: 50%;
+    height: 60px;
+    width: 100px;
+    line-height: 20px;
+    text-align: center;
+    padding: 0.5rem;
+    padding-top: 3rem;
+    margin-bottom: 1rem;
+    transition: all 0.5s ease-in; }
+    #home-a .specials .fas:hover {
+      background-color: #ffbc00;
+      cursor: pointer;
+      color: #333; }
 
 #about-c .about-logos {
   display: grid;
@@ -206,27 +254,45 @@ img {
   #about-c .about-logos img {
     width: 70%; }
 
-#contact-a .text-fields {
-  display: grid;
-  grid-template-areas: "name email" "subject phone" "message message";
-  grid-gap: 1.2rem;
-  margin-bottom: 1.2rem; }
-  #contact-a .text-fields .name-input {
-    grid-area: name; }
-  #contact-a .text-fields .subject-input {
-    grid-area: subject; }
-  #contact-a .text-fields .email-input {
-    grid-area: email; }
-  #contact-a .text-fields .phone-input {
-    grid-area: phone; }
-  #contact-a .text-fields .message-input {
-    grid-area: message;
-    height: 100px; }
-  #contact-a .text-fields .text-input {
-    padding: 0.5rem 1rem; }
-
-#contact-a button[type="submit"] {
-  width: 50%; }
+#contact-a {
+  background-color: #131a1d;
+  color: #fff; }
+  #contact-a .text-fields {
+    display: grid;
+    grid-template-areas: "name email" "subject phone" "message message";
+    grid-gap: 1.2rem;
+    margin-bottom: 1.2rem; }
+    #contact-a .text-fields .name-input {
+      grid-area: name;
+      background-color: #131a1d;
+      border: #fff 2px solid; }
+    #contact-a .text-fields .subject-input {
+      grid-area: subject;
+      background-color: #131a1d;
+      border: #fff 2px solid; }
+    #contact-a .text-fields .email-input {
+      grid-area: email;
+      background-color: #131a1d;
+      border: #fff 2px solid; }
+    #contact-a .text-fields .phone-input {
+      grid-area: phone;
+      background-color: #131a1d;
+      border: #fff 2px solid; }
+    #contact-a .text-fields .message-input {
+      grid-area: message;
+      height: 100px;
+      background-color: #131a1d;
+      border: #fff 2px solid; }
+    #contact-a .text-fields .text-input {
+      padding: 0.5rem 1rem;
+      background-color: #131a1d;
+      border: #fff 2px solid; }
+  #contact-a button[type="submit"] {
+    width: 50%;
+    background-color: #ffbc00; }
+    #contact-a button[type="submit"]:hover {
+      background-color: #333;
+      color: #fff; }
 
 #contact-b .contact-info {
   display: grid;
@@ -238,7 +304,7 @@ img {
   font-size: 4rem; }
 
 #main-footer {
-  background: #333;
+  background: black;
   color: #fff;
   height: 5rem; }
   #main-footer .footer-content {
@@ -256,7 +322,7 @@ img {
       text-align: center;
       padding: 0.5rem; }
       #main-footer .footer-content .social .fab:hover {
-        background: darkgreen; }
+        background: #ffbc00; }
 
 @media (max-width: 800px) {
   #header-home {
@@ -280,7 +346,7 @@ img {
     line-height: 0.2rem; }
   #header-home {
     height: 10rem;
-    border-bottom: 3px solid darkgreen;
+    border-bottom: 3px solid #ffbc00;
     background-position: 20% 30%; }
     #header-home .header-content {
       display: none; }

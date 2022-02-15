@@ -42,6 +42,16 @@ img {
   display: flex;
   justify-content: space-between;
   padding-top: 1rem;
+  font-weight: 900;
+  font-size: 1.3rem;
+
+  .home {
+    color: #057dc7;
+
+    &:hover {
+      color: #131a1d;
+    }
+  }
 
   ul {
     display: flex;
@@ -55,12 +65,12 @@ img {
     text-decoration: none;
     color: #333;
     text-transform: uppercase;
-    border-bottom: 3px darkgreen solid;
+
     padding-bottom: 0.5rem;
-    transition: border-color 0.5s;
+    transition: color 0.5s;
 
     &:hover {
-      border-color: $medium-color;
+      color: #057dc7;
     }
 
     &.current {
@@ -97,7 +107,14 @@ img {
       max-height: 50px;
       margin-top: 170px;
       margin-left: 3rem;
-      justify-self: auto;
+      position: absolute;
+      left: 33rem;
+      background-color: $main-color;
+
+      &:hover {
+        background-color: #333;
+        color: #fff;
+      }
     }
   }
 }
@@ -112,6 +129,7 @@ img {
     text-transform: none !important;
   }
   color: #fff;
+  background-color: black;
 }
 
 #header {
@@ -120,9 +138,27 @@ img {
     height: 75vh;
     color: black;
 
+    .layer {
+      background: rgba($color: #333, $alpha: 0.2);
+      padding-bottom: 2rem;
+      min-width: 100%;
+
+      position: absolute;
+      left: 0;
+    }
+
     .header-content {
       text-align: center;
       padding-top: 15%;
+
+      .btn-light {
+        background-color: $main-color;
+        font-weight: bolder;
+        &:hover {
+          background-color: black;
+          color: #fff;
+        }
+      }
 
       h1 {
         font-size: 2.5rem;
@@ -150,6 +186,23 @@ img {
       .fas {
         color: $main-color;
         padding-bottom: 0.4rem;
+
+        border: 2px black solid;
+        border-radius: 50%;
+        height: 60px;
+        width: 100px;
+        line-height: 20px;
+        text-align: center;
+        padding: 0.5rem;
+        padding-top: 3rem;
+        margin-bottom: 1rem;
+        transition: all 0.5s ease-in;
+
+        &:hover {
+          background-color: $main-color;
+          cursor: pointer;
+          color: #333;
+        }
       }
     }
   }
@@ -171,6 +224,9 @@ img {
 
 #contact {
   &-a {
+    background-color: #131a1d;
+    color: #fff;
+
     .text-fields {
       display: grid;
       grid-template-areas:
@@ -182,28 +238,46 @@ img {
 
       .name-input {
         grid-area: name;
+        background-color: #131a1d;
+        border: #fff 2px solid;
       }
       .subject-input {
         grid-area: subject;
+        background-color: #131a1d;
+        border: #fff 2px solid;
       }
       .email-input {
         grid-area: email;
+        background-color: #131a1d;
+        border: #fff 2px solid;
       }
       .phone-input {
         grid-area: phone;
+        background-color: #131a1d;
+        border: #fff 2px solid;
       }
       .message-input {
         grid-area: message;
         height: 100px;
+        background-color: #131a1d;
+        border: #fff 2px solid;
       }
 
       .text-input {
         padding: 0.5rem 1rem;
+        background-color: #131a1d;
+        border: #fff 2px solid;
       }
     }
 
     button[type="submit"] {
       width: 50%;
+      background-color: $main-color;
+
+      &:hover {
+        background-color: #333;
+        color: #fff;
+      }
     }
   }
 
@@ -224,7 +298,7 @@ img {
 }
 
 #main-footer {
-  background: $dark-color;
+  background: black;
   color: #fff;
   height: 5rem;
 
