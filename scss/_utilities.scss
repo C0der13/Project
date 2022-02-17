@@ -120,11 +120,69 @@ input[class^="btn-"]:hover {
   background: $main-color;
   display: block;
   margin: 0 auto 1rem auto;
-  margin-top: 1.8rem;
+  margin-top: 1.9rem;
 }
 
 .contact-info {
   i {
     color: $main-color;
   }
+}
+
+#icon1 {
+  position: absolute;
+  left: 0.5rem;
+  border: 2px $main-color solid;
+  border-radius: 10%;
+  height: 20px;
+  width: 35px;
+  line-height: 10px;
+  text-align: center;
+  padding: 0.5rem;
+  padding-top: 1.1rem;
+  margin-bottom: 1rem;
+  background-color: $main-color;
+}
+
+#icon2 {
+  position: absolute;
+  right: 0.5rem;
+  border: 2px $main-color solid;
+  border-radius: 10%;
+  height: 20px;
+  width: 35px;
+  line-height: 10px;
+  text-align: center;
+  padding: 0.5rem;
+  padding-top: 1.1rem;
+  margin-bottom: 1rem;
+  background-color: $main-color;
+  top: 14.2rem;
+}
+
+#icon3 {
+  position: absolute;
+  margin-top: 11.8rem;
+  margin-left: 45.6rem;
+  border: 2px $main-color solid;
+  border-radius: 10%;
+  height: 20px;
+  width: 35px;
+  line-height: 10px;
+  text-align: center;
+  padding: 0.5rem;
+  padding-top: 1.1rem;
+  margin-bottom: 1rem;
+  background-color: $main-color;
+  top: 20.5rem;
+}
+
+#read1 {
+  margin-top: 1rem;
+}
+
+.client-arrows {
+  display: flex;
+  margin-left: 35rem;
+  gap: 1rem;
 }

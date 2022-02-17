@@ -15,6 +15,9 @@
       line-height: 1rem;
     }
   }
+  .dot {
+    display: none;
+  }
 }
 
 // Smartphones
@@ -22,9 +25,11 @@
   #main-nav {
     flex-direction: column;
     align-items: center;
+    font-weight: 800;
+    font-size: 0.9rem;
 
     li {
-      padding: 1rem;
+      padding: 0.6rem;
     }
   }
 
@@ -148,5 +153,10 @@
     img {
       display: none;
     }
+  }
+  #icon1,
+  #icon2,
+  #icon3 {
+    display: none;
   }
 }
