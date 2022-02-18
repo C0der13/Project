@@ -18,9 +18,9 @@
     <title>Copy Spot | The Best Copier</title>
   </head>
   <body>
-  
-    <header id="header-home">
-     
+
+  <!-- Header content -->
+    <header id="header-home">  
       <div class="container">
         <nav id="main-nav">
           <img src="/dist/img/icon.png" alt="" id="logo" />
@@ -36,30 +36,31 @@
             <li><a href="#contact-b">register</a></li>
             <div class="dot"></div>
             <li><a href="#contact-b">Copyspots</li>
-
           </ul>
         </nav>
 
-        <div class="layer">
+        
         <div class="header-content">
+          <!-- translucent layer -->
+          <div class="layer">
+            <h1>
+              You can take 25 free photostats per day in copyspots! <br />
+              Awesome, right!
+            </h1>          
+            <a href="#contact-a" class="btn-light">REGISTER</a>
+          </div>
+          <!-- layer end -->
+          <!-- Arrows -->
           <i class="fa fa-angle-left fa-3x" id="icon1"></i>
-          
-          <h1>
-            You can take 25 free photostats per day in copyspots! <br />
-            Awesome, right!
-          </h1>
-          
-          <a href="#contact-a" class="btn-light">REGISTER</a>
-          <i class="fa fa-angle-right fa-3x" id="icon2"></i>
-          
+          <i class="fa fa-angle-right fa-3x" id="icon2"></i>        
+          <a href="#contact-b">
+          <i class="fa fa-angle-down fa-3x" id="icon3"></i></a>
+          <!-- Arrows end -->
         </div>
-        <a href="#contact-b">
-        <i class="fa fa-angle-down fa-3x" id="icon3"></i></a>
       </div>
-    </div>
     </header>
 
-    
+    <!-- Home content -->
     <section id="home-a" class="text-center py-2">
       <div class="container">
         <h2 class="section-title" id="how-it-works">HOW IT WORKS</h2>
@@ -69,8 +70,9 @@
           eum! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non in,
           fugit incidunt debitis necessitatibus quisquam.
         </p>
+        <!-- Logos -->
         <div class="specials">
-          <div>
+          <div id="firstlogo">
             <i class="fas fa-desktop fa-2x"></i>
             <h3>Locate a copyspot near you!</h3>
             <p>
@@ -102,22 +104,28 @@
       </div>
     </section>
 
+    <!-- Image overlay -->
     <div class="pic">
       <div class="pic-content">
-        <img src="/dist/img/paper.jpg" alt="" />
-        <h2>Lorem ipsum dolor sit amet.</h2>
-
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque veniam
-          in maiores! Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet
-          consectetur, adipisicing elit. Minima, ratione?
-        </p>
-        <a href="#contact-b" class="btn-light">Read More</a>
+        <div class="picture">
+          <img src="/dist/img/paper.jpg" alt="" />
+        </div>
+        <div class="pic-text">
+          <h2>Lorem ipsum dolor sit amet.</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque veniam
+              in maiores! Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet
+              consectetur, 
+            </p>
+            <div class="button">
+              <a href="#contact-b" class="btn-light">Read More</a>
+            </div>
+       </div>
       </div>
      
     </div>
 
-    
+    <!-- Our clients section -->
     <div id="our-clients">
       <section id="about-c" class="py-4 bg-light">
         <div class="container">
@@ -127,7 +135,8 @@
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere
             mollitia nemo consectetur vel molestias ex quis. Sapiente commodi
             hic necessitatibus? Lorem ipsum dolor sit amet, consectetur
-            adipisicing elit. Eaque, veniam. Lorem ipsum dolor sit.
+            adipisicing elit. Eaque, veniam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, excepturi?
+            Lorem ipsum dolor sit.
           </p>
           <div class="about-logos">
             <img src="/dist/img/about-logos/logo-envato.png" alt="" />
@@ -143,6 +152,7 @@
       </section>
     </div>
 
+    <!-- Quote section -->
     <section id="quote" class="py-4 bg-dark">
       <div class="container">
         <p class="lead">
@@ -152,10 +162,16 @@
         </p>
         <div class="bottom-line"></div>
         <h3 class="section-title">John Doe</h3>
+        <div class="dots">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>  
       </div>
     </section>
 
-    
+      <!-- Contact card -->
       <section id="contact-b" class="py-3 bg-light">
         <div class="container">
           <h2 class="section-title">Contact Us</h2>
@@ -186,14 +202,14 @@
       </section>
     </div>
 
-    
+    <!-- Contact form -->
   <div id="#contact-us" class="bg-medium">
     <section id="contact-a" class="text-center py-3">
       <div class="container">
         <h2 class="section-title">send us a message</h2>
         <div class="bottom-line"></div>
         <p class="lead">Feel free to mail!</p>
-        <form method="POST" data-netlify="true" data-netlify-recaptcha="true">
+        <form>
           <div class="text-fields">
             <input
               type="text"
@@ -232,7 +248,7 @@
           
         </form>
         
-        
+        <!-- Up arrow -->
       </div>
       <div class="last-arrow">
         <a href="#header-home"><i class="fa fa-angle-up fa-3x" id="icond"></i></a>
