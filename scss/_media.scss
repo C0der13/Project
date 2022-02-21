@@ -38,18 +38,39 @@
       display: none;
     }
     .pic-content {
-      line-height: 0.2rem;
+      line-height: 0.1rem;
     }
   }
 
   #header {
     &-home {
-      height: 10rem;
+      height: 20rem;
       border-bottom: 3px solid $main-color;
       background-position: 20% 30%;
 
       .header-content {
-        display: none;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .layer {
+        line-height: 1rem;
+        height: 100px;
+        padding-top: 5px;
+        padding-bottom: 45px;
+        bottom: 25px;
+
+        h1 {
+          font-size: 20px;
+        }
+
+        .btn-light {
+          padding: 1rem;
+          padding-top: 0.5rem;
+          padding-bottom: 0.5rem;
+          font-weight: 100;
+          font-size: 1rem;
+        }
       }
     }
 
