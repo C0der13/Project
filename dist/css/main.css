@@ -115,7 +115,7 @@ input[class^="btn-"]:hover {
   justify-self: center;
   max-width: 100%;
   max-height: 100%;
-  margin-top: 17rem; }
+  margin-top: 26rem; }
 
 #icon2 {
   position: absolute;
@@ -130,7 +130,7 @@ input[class^="btn-"]:hover {
   padding: 1rem 0.8rem 1rem 0.5rem;
   max-width: 100%;
   max-height: 100%;
-  margin-top: 17rem; }
+  margin-top: 26rem; }
 
 #icon3 {
   border: 2px #ffbc00 solid;
@@ -141,6 +141,8 @@ input[class^="btn-"]:hover {
   width: 2rem;
   position: absolute;
   justify-self: center;
+  align-self: center;
+  margin-left: 39rem;
   bottom: 5px; }
 
 #read1 {
@@ -243,15 +245,15 @@ img {
       justify-self: baseline;
       min-width: auto; }
     .pic .pic-content img {
-      width: 400px;
-      height: 270px;
+      width: 600px;
+      height: 400px;
       margin-right: 100px;
       margin-left: 20rem;
       bottom: 0px;
       top: 0px;
-      flex-grow: 100;
+      flex-grow: 1;
       overflow: auto;
-      resize: none; }
+      position: relative; }
     .pic .pic-content .pic-text {
       margin-right: 8rem;
       min-width: none; }
@@ -295,20 +297,21 @@ img {
     background: rgba(51, 51, 51, 0.2);
     padding-bottom: 2rem;
     height: 200px;
-    margin-top: 8rem;
+    margin-top: 35rem;
     position: absolute;
     padding-top: 3rem;
     left: 0;
     overflow: hidden;
     max-width: 100%;
     max-height: 100%;
-    right: 0; }
+    right: 0;
+    align-self: center; }
   #header-home .header-content {
     text-align: center;
-    align-items: center;
-    justify-items: center;
     align-content: center;
-    padding-top: 15%; }
+    display: flex;
+    padding-top: 15%;
+    height: 380px; }
     #header-home .header-content .btn-light {
       background-color: #ffbc00;
       font-weight: bolder;
@@ -319,7 +322,9 @@ img {
     #header-home .header-content h1 {
       font-size: 2.5rem;
       line-height: 1.2;
-      margin-bottom: 2rem; }
+      margin-bottom: 2rem;
+      justify-self: center;
+      align-self: center; }
 
 #header-inner {
   background: url("../img/background.jpg") no-repeat 20% 20%/cover;

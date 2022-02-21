@@ -114,15 +114,15 @@ img {
     }
 
     img {
-      width: 400px;
-      height: 270px;
+      width: 600px;
+      height: 400px;
       margin-right: 100px;
       margin-left: 20rem;
       bottom: 0px;
       top: 0px;
-      flex-grow: 100;
+      flex-grow: 1;
       overflow: auto;
-      resize: none;
+      position: relative;
     }
     .pic-text {
       margin-right: 8rem;
@@ -183,7 +183,7 @@ img {
       background: rgba($color: #333, $alpha: 0.2);
       padding-bottom: 2rem;
       height: 200px;
-      margin-top: 8rem;
+      margin-top: 35rem;
       position: absolute;
       padding-top: 3rem;
       left: 0;
@@ -192,14 +192,18 @@ img {
       max-width: 100%;
       max-height: 100%;
       right: 0;
+      // justify-self: center;
+      align-self: center;
     }
 
     .header-content {
       text-align: center;
-      align-items: center;
-      justify-items: center;
+      // align-items: center;
+      // justify-items: center;
       align-content: center;
+      display: flex;
       padding-top: 15%;
+      height: 380px;
 
       .btn-light {
         background-color: $main-color;
@@ -215,6 +219,8 @@ img {
         font-size: 2.5rem;
         line-height: 1.2;
         margin-bottom: 2rem;
+        justify-self: center;
+        align-self: center;
       }
     }
   }
