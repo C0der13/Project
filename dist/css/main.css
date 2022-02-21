@@ -104,8 +104,6 @@ input[class^="btn-"]:hover {
 #icon1 {
   position: absolute;
   left: 0px;
-  bottom: 0px;
-  top: calc(100vh - 25rem);
   border: 2px #ffbc00 solid;
   border-radius: 10%;
   height: 20px;
@@ -114,21 +112,25 @@ input[class^="btn-"]:hover {
   padding: 0.5rem;
   padding-top: 1.1rem;
   background-color: #ffbc00;
-  justify-self: center; }
+  justify-self: center;
+  max-width: 100%;
+  max-height: 100%;
+  margin-top: 17rem; }
 
 #icon2 {
   position: absolute;
   justify-self: center;
   right: 0px;
-  bottom: 0px;
-  top: calc(100vh - 25rem);
   background-color: #ffbc00;
   border: 2px #ffbc00 solid;
   border-radius: 10%;
   height: 20px;
   width: 20px;
   line-height: 10px;
-  padding: 1rem 0.8rem 1rem 0.5rem; }
+  padding: 1rem 0.8rem 1rem 0.5rem;
+  max-width: 100%;
+  max-height: 100%;
+  margin-top: 17rem; }
 
 #icon3 {
   border: 2px #ffbc00 solid;
@@ -139,7 +141,7 @@ input[class^="btn-"]:hover {
   width: 2rem;
   position: absolute;
   justify-self: center;
-  bottom: 0px; }
+  bottom: 5px; }
 
 #read1 {
   margin-top: 1rem; }
@@ -223,10 +225,6 @@ img {
   background: url(/dist/img/back2.jpg) no-repeat center center/cover;
   height: 45vh;
   width: 100vw; }
-  .pic .btn-light {
-    border: 3px #ffbc00 solid;
-    background-color: #131a1d;
-    color: #131a1d; }
   .pic .pic-content {
     text-align: center;
     color: #fff;
@@ -250,7 +248,10 @@ img {
       margin-right: 100px;
       margin-left: 20rem;
       bottom: 0px;
-      top: 0px; }
+      top: 0px;
+      flex-grow: 100;
+      overflow: auto;
+      resize: none; }
     .pic .pic-content .pic-text {
       margin-right: 8rem;
       min-width: none; }
@@ -258,10 +259,14 @@ img {
       max-height: 50px;
       justify-self: flex-end;
       left: 25rem;
-      background-color: #ffbc00; }
+      background-color: #001119;
+      border: 2px #ffbc00 solid;
+      border-radius: 10px;
+      color: #fff;
+      margin-top: 1rem; }
       .pic .pic-content .btn-light:hover {
-        background-color: #333;
-        color: #fff; }
+        background-color: #ffbc00;
+        color: #333; }
 
 #quote {
   color: #fff;
@@ -288,19 +293,21 @@ img {
   position: relative; }
   #header-home .layer {
     background: rgba(51, 51, 51, 0.2);
-    padding-bottom: 1rem;
-    justify-self: center;
-    height: 30vh;
-    bottom: 12rem;
+    padding-bottom: 2rem;
+    height: 200px;
+    margin-top: 8rem;
     position: absolute;
-    padding-top: 5rem;
-    left: 0px;
-    right: 0px;
-    top: calc(100vh - 33rem);
-    bottom: 0px;
-    width: 100%; }
+    padding-top: 3rem;
+    left: 0;
+    overflow: hidden;
+    max-width: 100%;
+    max-height: 100%;
+    right: 0; }
   #header-home .header-content {
     text-align: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
     padding-top: 15%; }
     #header-home .header-content .btn-light {
       background-color: #ffbc00;
@@ -325,7 +332,7 @@ img {
   grid-gap: 1rem;
   grid-template-columns: repeat(3, 1fr); }
   #home-a .specials .btn-dark {
-    border-radius: 10%;
+    border-radius: 10px;
     background-color: #fff;
     border: 3px #ffbc00 solid;
     color: #131a1d;
@@ -333,10 +340,13 @@ img {
     #home-a .specials .btn-dark:hover {
       background-color: #333;
       color: #fff; }
+  #home-a .specials h3,
+  #home-a .specials p {
+    padding: 10px; }
   #home-a .specials .fas {
-    color: black;
+    color: #fff;
     padding-bottom: 0.4rem;
-    border: 2px black solid;
+    border: 2px #ffbc00 solid;
     border-radius: 50%;
     height: 60px;
     width: 100px;
@@ -348,9 +358,32 @@ img {
     transition: all 0.5s ease-in;
     background-color: #ffbc00; }
     #home-a .specials .fas:hover {
-      background-color: #ffbc00;
+      background-color: #333;
       cursor: pointer;
-      color: #333; }
+      color: #fff; }
+  #home-a .specials #logo-1 {
+    color: #ffbc00;
+    padding-bottom: 0.4rem;
+    border: 2px #333 solid;
+    border-radius: 50%;
+    height: 60px;
+    width: 100px;
+    line-height: 20px;
+    text-align: center;
+    padding: 0.5rem;
+    padding-top: 3rem;
+    margin-bottom: 1rem;
+    transition: all 0.5s ease-in;
+    background-color: #fff; }
+    #home-a .specials #logo-1:hover {
+      background-color: #333;
+      cursor: pointer;
+      color: #fff; }
+
+#logo-1 {
+  background-color: #f4f4f4;
+  color: #131a1d;
+  border-color: #131a1d; }
 
 #about-c .about-logos {
   display: grid;
